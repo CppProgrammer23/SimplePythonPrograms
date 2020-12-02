@@ -1,0 +1,9 @@
+{
+  "name": "Max",
+  "age": 15,
+  "hasChildren": true,
+  "job": [
+    "Writer",
+    "Programmer"
+  ]
+}
