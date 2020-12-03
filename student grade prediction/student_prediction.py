@@ -7,7 +7,9 @@ test=my_data[['G1','G2','G3','failures','absences','studytime']]
 
 X = my_data[['G1','G2','failures','absences','studytime']]
 row21_25 = test.head(25)
+print('#'*10,' Real data ','#'*10)
 print(row21_25.tail(5))
+print('#'*10,' Machine learning task ','#'*10)
 y = my_data['G3']
 X_train, X_test, y_train, y_test = tts(X,y,test_size=0.2)
 my_model=linear_model.LinearRegression()
@@ -21,3 +23,6 @@ print('%.2f'%pred1[0])
 my_pred=my_model.predict(X_test)
 accuracy=my_model.score(X_test,y_test)
 print('the accuracy is: {0:.2f}%'.format(accuracy*100))
+#coef and intercept
+print('Coef: ',my_model.coef_)
+print('Intercept: ',my_model.intercept_)
