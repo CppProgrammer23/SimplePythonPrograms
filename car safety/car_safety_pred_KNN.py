@@ -21,10 +21,14 @@ y=list(cls)
 X_train, X_test, y_train, y_test=tts(X,y,test_size=0.2)
 
 my_model=KNeighborsClassifier()
-my_model.fit(X,y)
+
+my_model.fit(X_train,y_train)
 my_pred=my_model.predict(X_test) #all the data
-pred=my_model.predict([[3,3,0,2,1,0]]) #a sample of prediction
 #print(my_pred)
+
+
+pred=my_model.predict([[3,3,0,2,1,0]]) #a sample of prediction
+print(pred)
 
 #print(sys.getsizeof(y_test),sys.getsizeof(X_test),sys.getsizeof(my_pred))
 
