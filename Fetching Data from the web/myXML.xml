@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<person>
+  <firstname>Idris</firstname>
+  <lastname>Chaouch</lastname>
+  <phonenbr name="08485614" />
+  <phonenbr name="054875666" />
+  <Job>Programmer</Job>
+  <skill name="C/C++" />
+  <skill name="Python" />
+  <skill name="JavaScript" />
+  <skill name="Felgo"/>
+</person>
