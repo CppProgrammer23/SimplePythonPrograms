@@ -53,7 +53,7 @@ acc=my_model.score(X_train,y_train)
 print('the Logistic Regression accuracy is: {0:.2f}%'.format(acc*100))
 
 
-#finf the best algorithm that suited to this application in term of accuracy
+#find the best algorithm that suited to this application in term of accuracy
 def models(X_t,y_t):
     #linear regression
     lr=LinearRegression()
