@@ -18,10 +18,8 @@ def func(file):
                 except:
                     nbr-=1
                     break
-    f.close()
     ave=sum/nbr
     print('{0:.2f}'.format(ave))
     with open(file,'a') as f:
         f.write('\nThe average is:{0:.2f}'.format(ave))
-    f.close()
 func('myfile.txt')
