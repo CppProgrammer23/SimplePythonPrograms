@@ -36,12 +36,12 @@ body="""\
 This was sent to you to make you up to date with Crypto-Currency!
 """
 #processing image from the net
-response = requests.get("https://en.wikipedia.org/wiki/Qt_%28software%29#/media/File:KDE_Mascot_Konqi_for_Qt.png")
+response = requests.get("https://en.wikipedia.org/wiki/Bitcoin#/media/File:Casascius_coin.jpg")
 #img = Image.open(BytesIO(response.content))
-im = open('Qt.png','wb')
+im = open('Bitcoin.png','wb')
 im.write(response.content)
 
-imag=open('Qt.png','rb').read()
+imag=open('Bitcoin.png','rb').read()
 #with open('Qt.png', 'rb') as img:
 #	message.get_payload()[1].add_related(img.read(), 'image', 'png', cid=asparagus_cid)
 #img = open('Qt.png','wb')
@@ -51,7 +51,7 @@ imag=open('Qt.png','rb').read()
 #  file_type=imghdr.what(f.name)
 #  file_name=f.name
 #  message.add_attachment(file_data,maintype='application',subtype='octet-stream',filename=file_name)
-image = MIMEImage(imag,'image',name='Qt.png')
+image = MIMEImage(imag,'image',name='Bitcoin.png')
 text=MIMEText(body,'plain')
 message.attach(text)
 message.attach(image)
